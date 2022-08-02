@@ -1,0 +1,9 @@
+{% extends 'base/main.html'%}
+{%block content%}
+<a href="{% url 'tasks' %}">Go back</a>
+<h1>Word Detail</h1>
+
+<h4>{{word}}</h4>
+<h4>Translation{{word.translation}}</h4>
+<h4>Sentence{{word.sentence}}</h4>
+{% endblock content %}
